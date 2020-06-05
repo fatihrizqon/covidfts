@@ -9,18 +9,11 @@ active
 @endsection
 
 @section('content')
-  <div class="page-head">
-    <h2 class="page-head-title">Dataset</h2>
-    <ol class="breadcrumb page-head-nav">
-      <li><a href="{{route('home')}}">home</a></li>
-      <li class="active">Dataset</li>
-    </ol>
-  </div>
   <div class="main-content container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <div class="panel panel-default">
-          <div class="panel-heading panel-heading-divider">Dataset<span class="panel-subtitle">Dataset Daftar Sembuh Covid-19 Jawa Timur.</span></div>
+          <div class="panel-heading panel-heading-divider">Dataset<span class="panel-subtitle">Siapkan data dari Microsoft Excel dengan menggunakan format .xlsx.</span></div>
           <div class="panel-body">
             <div class="row">
               <br>
@@ -52,10 +45,17 @@ active
                       <input name="excel" type="file">
                     </div>
                     <button class="btn btn-primary" type="submit">Import</button>
-                    <a class="btn btn-success" href="{{asset('storage/file/template_dataset_sembuh.xlsx')}}">Unduh Template</a>
+                    <a class="btn btn-warning" href="{{asset('storage/file/template_dataset_sembuh.xlsx')}}">Unduh Template</a>
                   </div>
               </form>
             </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-10">
+              </div>
+              <div class="col-xs-2">
+                  <button data-modal="full-success" class="btn btn-space btn-success md-trigger">Hitung</button>
+              </div>
             </div>
             <div class="row">
               <table id="table1" class="table table-striped table-hover table-fw-widget">
@@ -74,14 +74,6 @@ active
                   @endforeach
                 </tbody>
               </table>
-            </div>
-            <br><br>
-            <div class="row">
-              <div class="col-xs-10">
-              </div>
-              <div class="col-xs-2">
-                  <button data-modal="full-success" class="btn btn-space btn-success md-trigger">Hitung</button>
-              </div>
             </div>
           </div>
         </div>

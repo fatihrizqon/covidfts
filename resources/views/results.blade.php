@@ -10,10 +10,8 @@ active
 
 @section('content')
 <div class="page-head">
-    <h2 class="page-head-title">Results</h2>
-    <ol class="breadcrumb page-head-nav"></ol>
+    <h2 class="page-head-title">Hasil Perhitungan</h2>
 </div>
-
 <div class="main-content container-fluid">
     <div class="row">
     <!-- Jumlah Interval -->

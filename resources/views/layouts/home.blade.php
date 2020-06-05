@@ -33,8 +33,6 @@
               <div class="left-sidebar-content">
                 <ul class="sidebar-elements">
                   <li class="divider">Menu</li>
-                  <li class="@yield('/')"><a href="{{route('home')}}"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
-                  </li>
                   <li class="@yield('Dataset')"><a href="{{route('dataset')}}"><i class="icon mdi mdi-assignment"></i><span>Perhitungan</span></a>
                   </li>
                 </ul>
@@ -44,9 +42,7 @@
         </div>
       </div>
       <div class="be-content">
-
           @yield('content')
-
       </div>
     </div>
     <script src="{{asset('lib/jquery/jquery.min.js')}}" type="text/javascript"></script>

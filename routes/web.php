@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'DatasetController@index')->name('home');
 Route::get('/dataset', 'DatasetController@index')->name('dataset');
 Route::post('/import', 'DatasetController@import')->name('dataset.import');
 Route::get('/hitung', 'DatasetController@hitung_get');
