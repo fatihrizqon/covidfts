@@ -18,3 +18,4 @@ Route::get('/dataset', 'DatasetController@index')->name('dataset');
 Route::post('/import', 'DatasetController@import')->name('dataset.import');
 Route::get('/hitung', 'DatasetController@hitung_get');
 Route::post('/hitung', 'DatasetController@hitung')->name('dataset.hitung');
+Route::get('/reset', 'DatasetController@reset')->name('dataset.reset');

@@ -14,6 +14,11 @@ class DatasetController extends Controller
         return view('datasets',$data);
     }
 
+    public function reset(){
+      Dataset::truncate();
+      return redirect(route('dataset'))->with('danger', 'Reset Data success!');
+    }
+
     // Import Datasheet from Excel
     public function import(Request $request){
       if ($request->excel->getClientOriginalExtension() !='xlsx') {
